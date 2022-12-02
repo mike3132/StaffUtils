@@ -1,0 +1,95 @@
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+#                                                   💻Staff Utils Messages💻
+#                                                   🔥Coded By Mike3132🔥
+#                                                   💻Staff Utils Messages💻
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+
+#✍✍✍✍ This file handles all messages for the plugin including the prefix.✍✍✍✍
+#✍✍✍✍ You can change anything here to be whatever custom stuff you want.✍✍✍✍
+#☠☠☠☠ DO NOT CHANGE THE "Messages:" line as this will break the plugin.☠☠☠☠
+#☠☠☠☠ ALL messages must have single quotes '' as seen in this default config.☠☠☠☠
+
+#📝📝📝📝 Placeholders 📝📝📝📝
+
+
+#Plugin prefix is sent before ALL messages in the plugin.
+Messages:
+  #Plugin prefix for all messages.
+  Prefix: '&eStaff Utils &7> '
+
+  #➳➳➳➳➳ Player Messages ➳➳➳➳➳
+  #No permission to use /fly command
+  No-Permission: '&4ERROR: &cYou do not have permission to use this command'
+
+  #➳➳➳➳➳ Bhop Messages ➳➳➳➳➳
+  #Bhop enabled
+  Bhop-Enabled: '&bBunny hopping has been &2&lEnabled'
+
+  #Bhop disabled
+  Bhop-Disabled: '&bBunny hopping has been &4&lDisabled'
+
+  #➳➳➳➳➳ Freeze Messages➳➳➳➳➳
+
+  #Target player not found. (This will be sent if either the player is not online or is not a real player)
+  Freeze-Target-Not-Found: '&cError &4&l%playerName% &cnot found'
+
+  #Target player is now frozen
+  Freeze-Enabled-On-Target: '&aYou have frozen &2&l%playerName%'
+
+  #Target player is now unfrozen
+  Freeze-Disabled-On-Target: '&aYou have unfrozen &2&l%playerName%'
+
+  #☠☠☠☠ The following messages are sent to the target player who you have frozen.
+  #Target player is now frozen
+  Target-Freeze-Message: '&c&lYou have been frozen by a staff member. &4&lIf you log out you will be banned'
+
+  #Target player is now unfrozen
+  Target-Un-Freeze-Message: '&2&lYou have been released by a staff member'
+
+  #➳➳➳➳➳ Spectate Messages➳➳➳➳➳
+
+  #If the player only uses /spectate
+  Spectate-Not-Enough-Args: '&4Error You did not supply a players name'
+
+  #Target player not found. (This will be sent if either the player is not online or is not a real player)
+  Spectate-Target-Not-Found: '&cError &4&l%playerName% &cnot found'
+
+  #Message that is sent to the player when they begin spectating someone.
+  Spectate-Enabled: '&6You have began spectating &e%playerName%'
+
+  #Message that is sent to the player when they stop spectating someone.
+  Spectate-Disabled: '&6You are no longer spectating a player'
+
+  #➳➳➳➳➳ WelcomeBack Messages➳➳➳➳➳
+
+  #If the player only uses /WelcomeBack
+  WelcomeBack-Not-Enough-Args: '&4Error You did not supply a players name'
+
+  #Target player not found. (This will be sent if either the player is not online or is not a real player)
+  WelcomeBack-Target-Not-Found: '&cError &4&l%playerName% &cnot found'
+
+  #Message that is broadcasted to the server when someone uses /WelcomeBack <%playerName%>
+  WelcomeBack-Message: '&b&lWelcome Back &a%playerName% &6To Ragnarok'
+
+
+  #➳➳➳➳➳ Admin Messages ➳➳➳➳➳
+
+  #This is the admin help menu. (This runs A->Z)
+  Help-Header: '&e----- &eStaff Utils &e-----'
+  Help-A: '&6&lHelp menu'
+  Help-B: '&6To get back here use /Staffutils help'
+  Help-C: '&6/Staffutils reload &7-> &eReloads plugin configuration files'
+  Help-D: '&6/DragonFly toggle <playerName> &7-> &eToggles specified players flight'
+  Help-E: '&6/DragonFly adminfly &7-> &eToggles free admin flight'
+  Help-Footer: '&e----- &eStaff Utils &e-----'
+
+  #This is sent if someone has dragonFly.Admin and they just type /dragonfly
+  Help-Trigger: '&5ADMIN &4ERROR: &cNot enough command arguments. &ePlease use /dragonfly help'
+
+
+#See config.yml for permissions, and other plugin configurations
+#♏ If you have any questions please join my discord, open a support ticket and @Mike3132
+#♏ https://discord.gg/EHm6Ra3K
+#♏ Thanks for downloading and have a wonderful day
+#♛♛♛♛♛ End of messages.yml ♛♛♛♛♛
+#This is the default messages file.

@@ -1,0 +1,32 @@
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+#                                                   💻Staff Utils Config💻
+#                                                   🔥Coded By Mike3132🔥
+#                                                   💻Staff Utils Config💻
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+
+Version: 'Version 1.0'
+ConfigVersion: '1.0'
+##### WARNING: DO NOT CHANGE ANYTHING ABOVE THIS LINE IT WILL BREAK THE PLUGIN!#####
+
+#✍✍✍✍✍Permissions✍✍✍✍✍
+#staffUtils.Bhop
+#staffUtils.Freeze
+#staffUtils.LogoutWhileFrozen
+#staffUtils.WelcomeBack
+
+
+#✍✍✍✍✍Permissions✍✍✍✍✍
+
+#####You can Modify the following how you wish#####
+#♢♢♢♢♢Fuel Block♢♢♢♢♢
+#☠☠☠☠ You must use single quotes '' as seen in this default config.☠☠☠☠
+
+
+
+#See messages.yml for all configurable plugin messages
+#♏ If you have any questions please join my discord, open a support ticket and @Mike3132
+#♏ https://discord.gg/EHm6Ra3K
+#♏ Thanks for downloading and have a wonderful day
+
+#♛♛♛♛♛ END OF CONFIG ♛♛♛♛♛
+#This is the default config file.

@@ -1,0 +1,20 @@
+name: StaffUtils
+version: '${project.version}'
+main: me.mike3132.staffutils.Main
+api-version: 1.19
+authors: [ Mike3132 ]
+description: Staff Utilities Plugin
+website: www.Ragnarok.icu
+commands:
+  Bhop:
+    description: Enable / Disable bunny hopping
+    permission: staffUtils.Bhop
+  Freeze:
+    description: Enable / Disable freezing of players
+    permission: staffUtils.Freeze
+  Spectate:
+    description: Specate another player (This also fixes the chunks not rendering bug)
+    permission: staffUtils.Spectate
+  WelcomeBack:
+    description: Lets staff welcome new players.
+    permission: staffUtils.WelcomeBack
