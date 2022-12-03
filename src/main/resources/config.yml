@@ -18,8 +18,37 @@ ConfigVersion: '1.0'
 #✍✍✍✍✍Permissions✍✍✍✍✍
 
 #####You can Modify the following how you wish#####
-#♢♢♢♢♢Fuel Block♢♢♢♢♢
-#☠☠☠☠ You must use single quotes '' as seen in this default config.☠☠☠☠
+
+
+nightVision: true
+
+
+#♢♢♢♢♢Xray Blocks♢♢♢♢♢
+
+#✍✍✍✍✍ These are the blocks that will be shown when someone uses /xray (Anything not in this list will be hidden)✍✍✍✍✍
+#☠☠☠☠ You must use all capital letters, and DO NOT MODIFY "XrayBlocks" it will break the plugin.☠☠☠☠
+#📝📝📝📝 For a full list of blocks see <https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html>📝📝📝📝
+
+XrayBlocks:
+  - "COAL_ORE"
+  - "DEEPSLATE_COAL_ORE"
+  - "COPPER_ORE"
+  - "DEEPSLATE_COPPER_ORE"
+  - "IRON_ORE"
+  - "DEEPSLATE_IRON_ORE"
+  - "GOLD_ORE"
+  - "DEEPSLATE_GOLD_ORE"
+  - "REDSTONE_ORE"
+  - "DEEPSLATE_REDSTONE_ORE"
+  - "EMERALD_ORE"
+  - "DEEPSLATE_EMERALD_ORE"
+  - "LAPIS_ORE"
+  - "DEEPSLATE_LAPIS_ORE"
+  - "DIAMOND_ORE"
+  - "DEEPSLATE_DIAMOND_ORE"
+  - "NETHER_QUARTZ_ORE"
+  - "NETHER_GOLD_ORE"
+  - "ANCIENT_DEBRIS"
 
 
 

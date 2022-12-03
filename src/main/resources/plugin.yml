@@ -18,3 +18,8 @@ commands:
   WelcomeBack:
     description: Lets staff welcome new players.
     permission: staffUtils.WelcomeBack
+  Xray:
+    description: Enable / Disable xray feature
+    permission: staffUtils.Xray
+  ConfigReload:
+    description: Reload config

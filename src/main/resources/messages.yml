@@ -68,8 +68,20 @@ Messages:
   #Target player not found. (This will be sent if either the player is not online or is not a real player)
   WelcomeBack-Target-Not-Found: '&cError &4&l%playerName% &cnot found'
 
-  #Message that is broadcasted to the server when someone uses /WelcomeBack <%playerName%>
+  #Message that is broadcast to the server when someone uses /WelcomeBack <%playerName%>
   WelcomeBack-Message: '&b&lWelcome Back &a%playerName% &6To Ragnarok'
+
+  #➳➳➳➳➳ Xray Messages Messages➳➳➳➳➳
+
+  #Message that is sent to the player when they enable /xray.
+  Xray-Enabled: '&b&lXray &2Enabled'
+
+  #Message that is sent to the player when they disable /xray.
+  Xray-Disabled: '&b&lXray &4Disabled'
+
+
+
+
 
 
   #➳➳➳➳➳ Admin Messages ➳➳➳➳➳

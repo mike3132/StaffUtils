@@ -6,6 +6,7 @@ import me.mike3132.staffutils.EventManager.FreezeEvent;
 import me.mike3132.staffutils.EventManager.WelcomeBackEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.command.defaults.ReloadCommand;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -37,6 +38,8 @@ public final class Main extends JavaPlugin {
         registerFreezeCommand();
         registerSpectateCommand();
         registerWelcomeBackCommand();
+        registerXrayCommand();
+        registerReload();
 
         // Config loader
         saveDefaultConfig();
@@ -81,7 +84,12 @@ public final class Main extends JavaPlugin {
     public void registerWelcomeBackCommand() {
         new WelcomeBackCommand();
     }
-
+    public void registerXrayCommand() {
+        new XrayCommand();
+    }
+    public void registerReload() {
+        new ConfigReload();
+    }
 
 
 
