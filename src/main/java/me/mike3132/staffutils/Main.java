@@ -6,7 +6,6 @@ import me.mike3132.staffutils.EventManager.FreezeEvent;
 import me.mike3132.staffutils.EventManager.WelcomeBackEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.command.defaults.ReloadCommand;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -39,7 +38,7 @@ public final class Main extends JavaPlugin {
         registerSpectateCommand();
         registerWelcomeBackCommand();
         registerXrayCommand();
-        registerReload();
+        registerStaffUtilsCommand();
 
         // Config loader
         saveDefaultConfig();
@@ -87,8 +86,8 @@ public final class Main extends JavaPlugin {
     public void registerXrayCommand() {
         new XrayCommand();
     }
-    public void registerReload() {
-        new ConfigReload();
+    public void registerStaffUtilsCommand() {
+        new StaffUtilsCommand();
     }
 
 

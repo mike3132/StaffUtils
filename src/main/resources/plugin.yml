@@ -21,5 +21,7 @@ commands:
   Xray:
     description: Enable / Disable xray feature
     permission: staffUtils.Xray
-  ConfigReload:
-    description: Reload config
+  StaffUtils:
+    description: Main plugin command. This also houses the reload
+    permission: staffUtils.Admin
+    aliases: su

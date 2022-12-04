@@ -13,6 +13,8 @@ ConfigVersion: '1.0'
 #staffUtils.Freeze
 #staffUtils.LogoutWhileFrozen
 #staffUtils.WelcomeBack
+#staffUtils.Xray
+#staffUtils.Admin
 
 
 #✍✍✍✍✍Permissions✍✍✍✍✍
@@ -27,6 +29,15 @@ bhopBossBar: true
 #This is what the boss bar will say if it's enabled
 #☠☠☠☠You have to restart the server for title to change☠☠☠☠
 bhopBossBarTitle: '&2Bunny &aHopping'
+
+#♢♢♢♢♢Spectate Section♢♢♢♢♢
+
+#If this is set to true when someone uses /spectate they will be given a boss bar.
+spectateBossBar: true
+
+#This is what the boss bar will say if it's enabled
+#☠☠☠☠You have to restart the server for title to change☠☠☠☠
+spectateBossBarTitle: '&6&lSpectating'
 
 
 

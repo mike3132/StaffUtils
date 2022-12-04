@@ -52,7 +52,7 @@ public class BhopCommand implements CommandExecutor {
         bhoppingPlayers.remove(player.getUniqueId());
         player.setWalkSpeed(0.2F);
         ChatMessages.sendMessage(player, "Bhop-Disabled");
-        if (bossBarEnabled) {
+        if (bossBarEnabled && bar.getPlayers().contains(player)) {
             bar.removePlayer(player);
         }
         return false;

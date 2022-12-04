@@ -15,7 +15,6 @@ public class WelcomeBackCommand implements CommandExecutor {
         Main.plugin.getCommand("WelcomeBack").setExecutor(this);
     }
 
-
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (!(sender instanceof Player)) {
             sender.sendMessage(Main.chatColor("&eStaff Utils &7> &4You must be a player to use WelcomeBack"));

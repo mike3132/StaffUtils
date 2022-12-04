@@ -21,9 +21,12 @@ public class SpectateCommand implements CommandExecutor {
     public static HashSet<UUID> specatorList = new HashSet<>();
     public static BossBar bar;
 
+    String barTitle = Main.plugin.getConfig().getString("spectateBossBarTitle");
+    boolean bossBarEnabled = Main.plugin.getConfig().getBoolean("spectateBossBar");
+
     public SpectateCommand() {
         Main.plugin.getCommand("Spectate").setExecutor(this);
-        bar = Bukkit.createBossBar(Main.chatColor("&6&lSpectating"), BarColor.YELLOW, BarStyle.SOLID);
+        bar = Bukkit.createBossBar(Main.chatColor("" + barTitle), BarColor.YELLOW, BarStyle.SOLID);
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
@@ -52,11 +55,15 @@ public class SpectateCommand implements CommandExecutor {
 
         if (!specatorList.contains(player.getUniqueId())) {
             specatorList.add(player.getUniqueId());
-            bar.addPlayer(player);
             player.setGameMode(GameMode.SPECTATOR);
             player.teleport(target);
             player.setSpectatorTarget(target);
             ChatMessages.playerPlaceholderMessage(player, "Spectate-Enabled", args[0]);
+
+            if (bossBarEnabled) {
+                bar.addPlayer(player);
+            }
+
             new BukkitRunnable() {
                 @Override
                 public void run() {
@@ -72,7 +79,9 @@ public class SpectateCommand implements CommandExecutor {
         }
         specatorList.remove(player.getUniqueId());
         ChatMessages.sendMessage(player, "Spectate-Disabled");
-        bar.removePlayer(player);
+        if (bossBarEnabled && bar.getPlayers().contains(player)) {
+            bar.removePlayer(player);
+        }
 
 
         return true;

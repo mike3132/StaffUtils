@@ -38,7 +38,7 @@ public class XrayCommand implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (!(sender instanceof Player)) {
-            sender.sendMessage(Main.chatColor("Only players can use this command"));
+            sender.sendMessage(Main.chatColor("&eStaff Utils &7> &4You must be a player to use Xray"));
             return false;
         }
         Player player = (Player) sender;
@@ -92,7 +92,7 @@ public class XrayCommand implements CommandExecutor {
         if (nightVisionEnabled) {
             player.removePotionEffect(PotionEffectType.NIGHT_VISION);
         }
-        if (bossBarEnabled) {
+        if (bossBarEnabled && bar.getPlayers().contains(player)) {
             bar.removePlayer(player);
         }
 
