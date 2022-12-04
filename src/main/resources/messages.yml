@@ -19,7 +19,7 @@ Messages:
   Prefix: '&eStaff Utils &7> '
 
   #➳➳➳➳➳ Player Messages ➳➳➳➳➳
-  #No permission to use /fly command
+  #No permission message
   No-Permission: '&4ERROR: &cYou do not have permission to use this command'
 
   #➳➳➳➳➳ Bhop Messages ➳➳➳➳➳
