@@ -30,7 +30,7 @@ public class WelcomeBackEvent implements Listener {
                         returningPlayer.remove(player.getUniqueId());
                     }
                 }
-            }.runTaskLater(Main.plugin, 200L);
+            }.runTaskLater(Main.plugin, 600L);
         }
     }
 
