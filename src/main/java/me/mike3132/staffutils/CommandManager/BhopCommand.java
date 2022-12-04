@@ -19,9 +19,12 @@ public class BhopCommand implements CommandExecutor {
     public static HashSet<UUID> bhoppingPlayers = new HashSet<>();
     public static BossBar bar;
 
+    String barTitle = Main.plugin.getConfig().getString("bhopBossBarTitle");
+    boolean bossBarEnabled = Main.plugin.getConfig().getBoolean("bhopBossBar");
+
     public BhopCommand() {
         Main.plugin.getCommand("Bhop").setExecutor(this);
-        bar = Bukkit.createBossBar(Main.chatColor("&2Bunny &aHopping"), BarColor.BLUE, BarStyle.SOLID);
+        bar = Bukkit.createBossBar(Main.chatColor("" + barTitle), BarColor.BLUE, BarStyle.SOLID);
     }
 
 
@@ -39,14 +42,19 @@ public class BhopCommand implements CommandExecutor {
         }
         if (!bhoppingPlayers.contains(player.getUniqueId())) {
             bhoppingPlayers.add(player.getUniqueId());
-            bar.addPlayer(player);
             ChatMessages.sendMessage(player, "Bhop-Enabled");
+            if (bossBarEnabled) {
+                bar.addPlayer(player);
+            }
+
             return true;
         }
         bhoppingPlayers.remove(player.getUniqueId());
-        bar.removePlayer(player);
         player.setWalkSpeed(0.2F);
         ChatMessages.sendMessage(player, "Bhop-Disabled");
+        if (bossBarEnabled) {
+            bar.removePlayer(player);
+        }
         return false;
     }
 }

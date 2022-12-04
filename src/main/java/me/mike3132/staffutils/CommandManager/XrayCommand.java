@@ -2,9 +2,13 @@ package me.mike3132.staffutils.CommandManager;
 
 import me.mike3132.staffutils.ChatManager.ChatMessages;
 import me.mike3132.staffutils.Main;
+import org.bukkit.Bukkit;
 import org.bukkit.Chunk;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.boss.BarColor;
+import org.bukkit.boss.BarStyle;
+import org.bukkit.boss.BossBar;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -19,11 +23,18 @@ import java.util.UUID;
 
 public class XrayCommand implements CommandExecutor {
 
+    public static HashSet<UUID> xrayingPlayers = new HashSet<>();
+    public  static BossBar bar;
+
+    String barTitle = Main.plugin.getConfig().getString("xrayBossBarTitle");
+    boolean nightVisionEnabled = Main.plugin.getConfig().getBoolean("nightVision");
+    boolean bossBarEnabled = Main.plugin.getConfig().getBoolean("xrayBossBar");
+
     public XrayCommand() {
         Main.plugin.getCommand("Xray").setExecutor(this);
+        bar = Bukkit.createBossBar(Main.chatColor("" + barTitle), BarColor.GREEN, BarStyle.SOLID);
     }
 
-    public static HashSet<UUID> xrayingPlayers = new HashSet<>();
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (!(sender instanceof Player)) {
@@ -39,7 +50,11 @@ public class XrayCommand implements CommandExecutor {
             xrayingPlayers.add(player.getUniqueId());
             ChatMessages.sendMessage(player, "Xray-Enabled");
 
-            if (Main.plugin.getConfig().getBoolean("nightVision")) {
+            if (bossBarEnabled) {
+                bar.addPlayer(player);
+            }
+
+            if (nightVisionEnabled) {
                 player.addPotionEffect(PotionEffectType.NIGHT_VISION.createEffect(999999999, 255));
             }
 
@@ -74,7 +89,12 @@ public class XrayCommand implements CommandExecutor {
         }
         xrayingPlayers.remove(player.getUniqueId());
         ChatMessages.sendMessage(player, "Xray-Disabled");
-        player.removePotionEffect(PotionEffectType.NIGHT_VISION);
+        if (nightVisionEnabled) {
+            player.removePotionEffect(PotionEffectType.NIGHT_VISION);
+        }
+        if (bossBarEnabled) {
+            bar.removePlayer(player);
+        }
 
         return true;
     }
