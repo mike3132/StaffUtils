@@ -52,6 +52,11 @@ public class SpectateCommand implements CommandExecutor {
             return true;
         }
 
+        if (player.getWorld() != target.getWorld()) {
+            ChatMessages.playerPlaceholderMessage(player, "Spectate-World-Different", args[0]);
+            return true;
+        }
+
 
         if (!specatorList.contains(player.getUniqueId())) {
             specatorList.add(player.getUniqueId());

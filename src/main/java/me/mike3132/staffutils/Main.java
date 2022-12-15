@@ -3,6 +3,7 @@ package me.mike3132.staffutils;
 import me.mike3132.staffutils.CommandManager.*;
 import me.mike3132.staffutils.EventManager.BhopEvent;
 import me.mike3132.staffutils.EventManager.FreezeEvent;
+import me.mike3132.staffutils.EventManager.SpectateEvent;
 import me.mike3132.staffutils.EventManager.WelcomeBackEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -31,6 +32,7 @@ public final class Main extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new BhopEvent(), this);
         Bukkit.getPluginManager().registerEvents(new FreezeEvent(), this);
         Bukkit.getPluginManager().registerEvents(new WelcomeBackEvent(), this);
+        Bukkit.getPluginManager().registerEvents(new SpectateEvent(), this);
 
         // Command registers
         registerBhopCommand();
