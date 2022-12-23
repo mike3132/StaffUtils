@@ -52,10 +52,6 @@ public class SpectateCommand implements CommandExecutor {
             return true;
         }
 
-        if (player.getWorld() != target.getWorld()) {
-            ChatMessages.playerPlaceholderMessage(player, "Spectate-World-Different", args[0]);
-            return true;
-        }
 
 
         if (!specatorList.contains(player.getUniqueId())) {
@@ -75,6 +71,9 @@ public class SpectateCommand implements CommandExecutor {
                     if (specatorList.contains(player.getUniqueId())) {
                         player.teleport(target);
                         player.setSpectatorTarget(target);
+                        if (player.getGameMode() != GameMode.SPECTATOR) {
+                            player.setGameMode(GameMode.SPECTATOR);
+                        }
                         return;
                     }
                     this.cancel();

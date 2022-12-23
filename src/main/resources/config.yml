@@ -9,12 +9,12 @@ ConfigVersion: '1.0'
 ##### WARNING: DO NOT CHANGE ANYTHING ABOVE THIS LINE IT WILL BREAK THE PLUGIN!#####
 
 #✍✍✍✍✍Permissions✍✍✍✍✍
-#staffUtils.Bhop
-#staffUtils.Freeze
-#staffUtils.LogoutWhileFrozen
-#staffUtils.WelcomeBack
-#staffUtils.Xray
-#staffUtils.Admin
+#staffUtils.Bhop > Enables / Disables bunny hopping
+#staffUtils.Freeze  > Enables / Disables freeze on players
+#staffUtils.LogoutWhileFrozen > Sends a message when someone logs out while frozen
+#staffUtils.WelcomeBack > Welcomeback a player with a custom message
+#staffUtils.Xray > Enables / Disables xray
+#staffUtils.Admin > Access to all admin commands
 
 
 #✍✍✍✍✍Permissions✍✍✍✍✍

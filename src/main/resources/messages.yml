@@ -61,8 +61,6 @@ Messages:
   #Message that is sent to the player when they stop spectating someone.
   Spectate-Disabled: '&6You are no longer spectating a player'
 
-  #Message that is sent if the player and target are not in the same world.
-  Spectate-World-Different: '&4You are not in the same world as &4&l%playerName%'
 
   #➳➳➳➳➳ WelcomeBack Messages➳➳➳➳➳
 
