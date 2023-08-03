@@ -65,7 +65,7 @@ Messages:
   WelcomeBack-Not-Enough-Args: '&4Error You did not supply a players name'
 
   #Target player not found. (This will be sent if either the player is not online or is not a real player)
-  WelcomeBack-Target-Not-Found: '&cError &4&l%playerName% &cnot found'
+  WelcomeBack-Target-Not-Found: '&cError player not found'
 
   #Message that is broadcast to the server when someone uses /WelcomeBack <%playerName%>
   WelcomeBack-Message: '&b&lWelcome Back &a%playerName% &6To Ragnarok'
