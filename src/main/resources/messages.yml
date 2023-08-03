@@ -1,0 +1,106 @@
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+#                                                   💻Staff Utils Messages💻
+#                                                   🔥Coded By Mike3132🔥
+#                                                   💻Staff Utils Messages💻
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+
+#✍✍✍✍ This file handles all messages for the plugin including the prefix.✍✍✍✍
+#✍✍✍✍ You can change anything here to be whatever custom stuff you want.✍✍✍✍
+#☠☠☠☠ DO NOT CHANGE THE "Messages:" line as this will break the plugin.☠☠☠☠
+#☠☠☠☠ ALL messages must have single quotes '' as seen in this default config.☠☠☠☠
+
+#📝📝📝📝 Placeholders 📝📝📝📝
+#%playerName% Returns a players name.
+
+
+#Plugin prefix is sent before ALL messages in the plugin.
+Messages:
+  #Plugin prefix for all messages.
+  Prefix: '&eStaff Utils &7> '
+
+  #➳➳➳➳➳ Console Messages ➳➳➳➳➳
+  #Players only command
+  Player-Only: '&4ERROR: &cYou must be a player to use this command'
+
+  #➳➳➳➳➳ Player Messages ➳➳➳➳➳
+  #No permission message
+  No-Permission: '&4ERROR: &cYou do not have permission to use this command'
+
+  #Not enough command arguments
+  Not-Enough-Args: "&4Error: &cYou have not supplied enough arguments for this command"
+
+  #➳➳➳➳➳ Freeze Messages➳➳➳➳➳
+
+  #Target player not found. (This will be sent if either the player is not online or is not a real player)
+  Freeze-Target-Not-Found: '&cError player not found'
+
+  #Target player is now frozen
+  Freeze-Enabled-On-Target: '&aYou have frozen '
+
+  #Target player is now unfrozen
+  Freeze-Disabled-On-Target: '&aYou have unfrozen '
+
+  #☠☠☠☠ The following messages are sent to the target player who you have frozen.
+  #Target player is now frozen
+  Target-Freeze-Message: '&c&lYou have been frozen by a staff member. &4&lIf you log out you will be banned'
+
+  #Target player is now unfrozen
+  Target-Un-Freeze-Message: '&2&lYou have been released by a staff member'
+
+  #➳➳➳➳➳ Spectate Messages➳➳➳➳➳
+
+  #Target player not found. (This will be sent if either the player is not online or is not a real player)
+  Spectate-Target-Not-Found: '&cError player not found'
+
+  #Message that is sent to the player when they begin spectating someone.
+  Spectate-Enabled: '&6You have began spectating '
+
+  #Message that is sent to the player when they stop spectating someone.
+  Spectate-Disabled: '&6You are no longer spectating '
+
+
+  #➳➳➳➳➳ WelcomeBack Messages➳➳➳➳➳
+
+  #If the player only uses /WelcomeBack
+  WelcomeBack-Not-Enough-Args: '&4Error You did not supply a players name'
+
+  #Target player not found. (This will be sent if either the player is not online or is not a real player)
+  WelcomeBack-Target-Not-Found: '&cError &4&l%playerName% &cnot found'
+
+  #Message that is broadcast to the server when someone uses /WelcomeBack <%playerName%>
+  WelcomeBack-Message: '&b&lWelcome Back &a%playerName% &6To Ragnarok'
+
+  #➳➳➳➳➳ Xray Messages Messages➳➳➳➳➳
+
+  #Message that is sent to the player when they enable /xray.
+  Xray-Enabled: '&bXray: &2Enabled &7- &6de-Rendering blocks, This can cause a bit of client lag'
+
+  #Message that is sent to the player when they disable /xray.
+  Xray-Disabled: '&b&lXray: &4Disabled &7- &ePlease change worlds for blocks to re-Render'
+
+
+  #➳➳➳➳➳ Help Section ➳➳➳➳➳
+
+  #This is the help menu, This will be sent if a player uses /StaffUtils help. (This runs A->Z)
+  Help-Header: '&b----- &dStaff Utils &b-----'
+  Help-A: '&6&lHelp menu'
+  Help-B: '&6To get back here use /Staffutils help'
+  Help-C: '&6/Staffutils reload &7-> &aReloads plugin configuration files'
+  Help-D: '&6/Bhop &7-> &aToggles bunny hopping'
+  Help-E: '&6/Freeze <playerName> &7-> &aFreezes a player in place and teleports them to you.'
+  Help-F: '&6/Spectate <playerName> &7-> &aPuts you into spectate mode and teleports you to given player'
+  Help-G: '&6/Welcomeback <playerName> &7-> &aBroadcasts a pre-defined welcome back message to the entire server.'
+  Help-H: '&6/Xray &7-> &eToggles xray. *Warning* this may cause client side lag'
+  Help-Footer: '&b----- &dStaff Utils &b-----'
+
+  #This is sent to the player if they just use /StaffUtils
+  Help-Not-Enough-Arguments: '&6Please use /StaffUtils help for a list of commands'
+
+
+
+#See config.yml for permissions, and other plugin configurations
+#♏ If you have any questions please join my discord, open a support ticket and @Mike3132
+#♏ https://discord.gg/ePQGvQuzG3
+#♏ Thanks for downloading and have a wonderful day
+#♛♛♛♛♛ End of messages.yml ♛♛♛♛♛
+#This is the default messages file.

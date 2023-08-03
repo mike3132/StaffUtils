@@ -1,0 +1,15 @@
+name: StaffUtils
+version: '${project.version}'
+main: net.resolutemc.staffutils.StaffUtils
+api-version: 1.19
+commands:
+  StaffUtils:
+    description: Main plugin command
+    permission: StaffUtils.Command
+    aliases: su
+  Freeze:
+    description: Enable or disable freeze on players
+    permission: StaffUtils.Command.Freeze
+  Spectate:
+    description: Enable or disable spectate mode
+    permission: StaffUtils.Command.Spectate

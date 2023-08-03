@@ -1,0 +1,84 @@
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+#                                                   💻Staff Utils Config💻
+#                                                   🔥Coded By Mike3132🔥
+#                                                   💻Staff Utils Config💻
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+
+Version: 'Version 4.0'
+ConfigVersion: '4.0'
+##### WARNING: DO NOT CHANGE ANYTHING ABOVE THIS LINE IT WILL BREAK THE PLUGIN!#####
+
+#✍✍✍✍✍Permissions✍✍✍✍✍
+#StaffUtils.Command.Freeze > Allows players to freeze another
+
+
+#✍✍✍✍✍Permissions✍✍✍✍✍
+
+#####You can Modify the following how you wish#####
+
+#♢♢♢♢♢Bhop Section♢♢♢♢♢
+
+#If this is set to true when someone uses /bhop they will be given a boss bar.
+bhopBossBar: true
+
+#This is what the boss bar will say if it's enabled
+#☠☠☠☠You have to restart the server for title to change☠☠☠☠
+bhopBossBarTitle: '&2Bunny &aHopping'
+
+#♢♢♢♢♢Spectate Section♢♢♢♢♢
+
+#If this is set to true when someone uses /spectate they will be given a boss bar.
+spectateBossBar: true
+
+#This is what the boss bar will say if it's enabled
+#☠☠☠☠You have to restart the server for title to change☠☠☠☠
+spectateBossBarTitle: '&6&lSpectating'
+
+
+
+#♢♢♢♢♢Xray Section♢♢♢♢♢
+
+#✍✍✍✍✍ These are the blocks that will be shown when someone uses /xray (Anything not in this list will be hidden)✍✍✍✍✍
+#☠☠☠☠ You must use all capital letters, and DO NOT MODIFY "XrayBlocks" it will break the plugin.☠☠☠☠
+#📝📝📝📝 For a full list of blocks see <https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html>📝📝📝📝
+
+#If this is set to true then when someone uses /xray they will be given night vision.
+nightVision: true
+
+#If this is set to true when someone uses /xray they will be given a boss bar.
+xrayBossBar: true
+
+#This is what the boss bar will say if it's enabled
+#☠☠☠☠You have to restart the server for this to take effect and change#☠☠☠☠
+xrayBossBarTitle: '&b&lXraying'
+
+XrayBlocks:
+  - "COAL_ORE"
+  - "DEEPSLATE_COAL_ORE"
+  - "COPPER_ORE"
+  - "DEEPSLATE_COPPER_ORE"
+  - "IRON_ORE"
+  - "DEEPSLATE_IRON_ORE"
+  - "GOLD_ORE"
+  - "DEEPSLATE_GOLD_ORE"
+  - "REDSTONE_ORE"
+  - "DEEPSLATE_REDSTONE_ORE"
+  - "EMERALD_ORE"
+  - "DEEPSLATE_EMERALD_ORE"
+  - "LAPIS_ORE"
+  - "DEEPSLATE_LAPIS_ORE"
+  - "DIAMOND_ORE"
+  - "DEEPSLATE_DIAMOND_ORE"
+  - "NETHER_QUARTZ_ORE"
+  - "NETHER_GOLD_ORE"
+  - "ANCIENT_DEBRIS"
+
+
+
+#See messages.yml for all configurable plugin messages
+#♏ If you have any questions please join my discord, open a support ticket and @Mike3132
+#♏ https://discord.gg/ePQGvQuzG3
+#♏ Thanks for downloading and have a wonderful day
+
+#♛♛♛♛♛ END OF CONFIG ♛♛♛♛♛
+#This is the default config file.
