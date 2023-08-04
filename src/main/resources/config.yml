@@ -10,6 +10,8 @@ ConfigVersion: '4.0'
 
 #✍✍✍✍✍Permissions✍✍✍✍✍
 #StaffUtils.Command.Freeze > Allows players to freeze another
+#StaffUtils.Command.Spectate > Allows players to use the spectate command
+#StaffUtils.Command.Xray > Allows players to use the xray command
 
 
 #✍✍✍✍✍Permissions✍✍✍✍✍
@@ -30,6 +32,9 @@ bhopBossBarTitle: '&2Bunny &aHopping'
 #If this is set to true when someone uses /spectate they will be given a boss bar.
 spectateBossBar: true
 
+#If this is set to true then when someone uses /spectate they will be given night vision.
+SpectateNightVision: true
+
 #This is what the boss bar will say if it's enabled
 #☠☠☠☠You have to restart the server for title to change☠☠☠☠
 spectateBossBarTitle: '&6&lSpectating'
@@ -43,7 +48,7 @@ spectateBossBarTitle: '&6&lSpectating'
 #📝📝📝📝 For a full list of blocks see <https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html>📝📝📝📝
 
 #If this is set to true then when someone uses /xray they will be given night vision.
-nightVision: true
+XrayNightVision: true
 
 #If this is set to true when someone uses /xray they will be given a boss bar.
 xrayBossBar: true

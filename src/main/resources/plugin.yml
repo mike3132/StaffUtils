@@ -13,3 +13,6 @@ commands:
   Spectate:
     description: Enable or disable spectate mode
     permission: StaffUtils.Command.Spectate
+  Xray:
+    description: Enable or disable xray mode
+    permission: StaffUtils.Command.Xray

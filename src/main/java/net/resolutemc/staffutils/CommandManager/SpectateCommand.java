@@ -1,5 +1,6 @@
 package net.resolutemc.staffutils.CommandManager;
 
+import net.resolutemc.staffutils.EffectManager.SpectateEffect;
 import net.resolutemc.staffutils.MessageManager.ChatMessages;
 import net.resolutemc.staffutils.MessageManager.ConsoleMessages;
 import net.resolutemc.staffutils.RunnableManager.SpectateRunnable;
@@ -25,7 +26,7 @@ public class SpectateCommand implements CommandExecutor {
         }
         Player player = (Player) sender;
 
-        if (!player.hasPermission("StaffUtils.Command.Freeze")) {
+        if (!player.hasPermission("StaffUtils.Command.Spectate")) {
             ChatMessages.sendMessage(player, "No-Permission");
             return true;
         }
@@ -45,12 +46,12 @@ public class SpectateCommand implements CommandExecutor {
             SpectateSet.addSpectatePlayers(player.getUniqueId());
             SpectateRunnable.SpectateTeleport(player, target);
             ChatMessages.sendMessageWithPlaceholder(player, "Spectate-Enabled", target.getName());
+            SpectateEffect.spectateEffectEnabled(player);
             return true;
         }
         SpectateSet.removeSpectatePlayers(player.getUniqueId());
         ChatMessages.sendMessageWithPlaceholder(player, "Spectate-Disabled", target.getName());
-
-
+        SpectateEffect.spectateEffectDisabled(player);
         return false;
     }
 }

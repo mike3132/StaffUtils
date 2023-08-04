@@ -3,6 +3,7 @@ package net.resolutemc.staffutils;
 import net.resolutemc.staffutils.CommandManager.FreezeCommand;
 import net.resolutemc.staffutils.CommandManager.SpectateCommand;
 import net.resolutemc.staffutils.CommandManager.StaffCommand;
+import net.resolutemc.staffutils.CommandManager.XrayCommand;
 import net.resolutemc.staffutils.ConfigManager.ConfigCreator;
 import net.resolutemc.staffutils.EventManager.FreezeEvent;
 import net.resolutemc.staffutils.MessageManager.ColorTranslate;
@@ -34,6 +35,7 @@ public final class StaffUtils extends JavaPlugin {
         registerStaffCommand();
         registerFreezeCommand();
         registerSpectateCommand();
+        registerXrayCommand();
     }
 
     @Override
@@ -56,6 +58,9 @@ public final class StaffUtils extends JavaPlugin {
     }
     private void registerSpectateCommand() {
         new SpectateCommand();
+    }
+    private void registerXrayCommand() {
+        new XrayCommand();
     }
 
 }
