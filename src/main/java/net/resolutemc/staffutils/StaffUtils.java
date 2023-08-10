@@ -14,7 +14,6 @@ public final class StaffUtils extends JavaPlugin {
 
     private static StaffUtils INSTANCE;
 
-
     @Override
     public void onEnable() {
         // Plugin startup logic

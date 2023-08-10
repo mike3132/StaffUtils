@@ -18,44 +18,12 @@ ConfigVersion: '4.0'
 
 #####You can Modify the following how you wish#####
 
-#♢♢♢♢♢Bhop Section♢♢♢♢♢
-
-#If this is set to true when someone uses /bhop they will be given a boss bar.
-bhopBossBar: true
-
-#This is what the boss bar will say if it's enabled
-#☠☠☠☠You have to restart the server for title to change☠☠☠☠
-bhopBossBarTitle: '&2Bunny &aHopping'
-
-#♢♢♢♢♢Spectate Section♢♢♢♢♢
-
-#If this is set to true when someone uses /spectate they will be given a boss bar.
-spectateBossBar: true
-
-#If this is set to true then when someone uses /spectate they will be given night vision.
-SpectateNightVision: true
-
-#This is what the boss bar will say if it's enabled
-#☠☠☠☠You have to restart the server for title to change☠☠☠☠
-spectateBossBarTitle: '&6&lSpectating'
-
-
-
-#♢♢♢♢♢Xray Section♢♢♢♢♢
-
 #✍✍✍✍✍ These are the blocks that will be shown when someone uses /xray (Anything not in this list will be hidden)✍✍✍✍✍
 #☠☠☠☠ You must use all capital letters, and DO NOT MODIFY "XrayBlocks" it will break the plugin.☠☠☠☠
 #📝📝📝📝 For a full list of blocks see <https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html>📝📝📝📝
 
 #If this is set to true then when someone uses /xray they will be given night vision.
 XrayNightVision: true
-
-#If this is set to true when someone uses /xray they will be given a boss bar.
-xrayBossBar: true
-
-#This is what the boss bar will say if it's enabled
-#☠☠☠☠You have to restart the server for this to take effect and change#☠☠☠☠
-xrayBossBarTitle: '&b&lXraying'
 
 XrayBlocks:
   - "COAL_ORE"

@@ -32,7 +32,7 @@ Messages:
   #➳➳➳➳➳ Freeze Messages➳➳➳➳➳
 
   #Target player not found. (This will be sent if either the player is not online or is not a real player)
-  Freeze-Target-Not-Found: '&cError player not found'
+  Freeze-Target-Not-Found: '&cError player not found '
 
   #Target player is now frozen
   Freeze-Enabled-On-Target: '&aYou have frozen '
@@ -77,24 +77,6 @@ Messages:
 
   #Message that is sent to the player when they disable /xray.
   Xray-Disabled: '&b&lXray: &4Disabled &7- &ePlease change worlds for blocks to re-Render'
-
-
-  #➳➳➳➳➳ Help Section ➳➳➳➳➳
-
-  #This is the help menu, This will be sent if a player uses /StaffUtils help. (This runs A->Z)
-  Help-Header: '&b----- &dStaff Utils &b-----'
-  Help-A: '&6&lHelp menu'
-  Help-B: '&6To get back here use /Staffutils help'
-  Help-C: '&6/Staffutils reload &7-> &aReloads plugin configuration files'
-  Help-D: '&6/Bhop &7-> &aToggles bunny hopping'
-  Help-E: '&6/Freeze <playerName> &7-> &aFreezes a player in place and teleports them to you.'
-  Help-F: '&6/Spectate <playerName> &7-> &aPuts you into spectate mode and teleports you to given player'
-  Help-G: '&6/Welcomeback <playerName> &7-> &aBroadcasts a pre-defined welcome back message to the entire server.'
-  Help-H: '&6/Xray &7-> &eToggles xray. *Warning* this may cause client side lag'
-  Help-Footer: '&b----- &dStaff Utils &b-----'
-
-  #This is sent to the player if they just use /StaffUtils
-  Help-Not-Enough-Arguments: '&6Please use /StaffUtils help for a list of commands'
 
 
 

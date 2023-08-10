@@ -6,6 +6,7 @@ import net.resolutemc.staffutils.MessageManager.ConsoleMessages;
 import net.resolutemc.staffutils.RunnableManager.XrayRunnable;
 import net.resolutemc.staffutils.SetManager.XraySet;
 import net.resolutemc.staffutils.StaffUtils;
+import org.bukkit.Chunk;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -32,7 +33,7 @@ public class XrayCommand implements CommandExecutor {
 
         if (!XraySet.getXrayingPlayers().contains(player.getUniqueId())) {
             XraySet.addXrayingPlayers(player.getUniqueId());
-            ChatMessages.sendMessage(player, " Xray-Enabled");
+            ChatMessages.sendMessage(player, "Xray-Enabled");
             XrayRunnable.xrayRunnable(player);
             XrayEffect.xrayEffectEnabled(player);
             return false;

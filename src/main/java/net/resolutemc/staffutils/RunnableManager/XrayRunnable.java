@@ -38,6 +38,4 @@ public class XrayRunnable {
             }
         }.runTaskTimer(StaffUtils.getInstance(), 0L, 20L);
     }
-
-
 }
