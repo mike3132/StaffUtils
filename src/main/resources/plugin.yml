@@ -16,3 +16,6 @@ commands:
   Xray:
     description: Enable or disable xray mode
     permission: StaffUtils.Command.Xray
+  Bhop:
+    description: Enable or disable bhop mode
+    permission: StaffUtils.Command.Bhop
