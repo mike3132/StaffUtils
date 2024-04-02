@@ -26,7 +26,6 @@ public class XrayUtils implements Listener {
         new BukkitRunnable() {
             @Override
             public void run() {
-                player.sendMessage("Should be re-enabled xray now");
                 onXrayEnable(player);
             }
         }.runTaskLater(StaffUtils.getInstance(), 20L);
@@ -46,7 +45,7 @@ public class XrayUtils implements Listener {
                         hiddenBlocks.add(Material.valueOf(string));
                     }
                     if (block.getType() != Material.AIR && !hiddenBlocks.contains(block.getType())) {
-                        player.sendBlockChange(block.getLocation(), Material.GLASS.createBlockData());
+                        player.sendBlockChange(block.getLocation(), Material.BARRIER.createBlockData());
                     }
                 }
             }

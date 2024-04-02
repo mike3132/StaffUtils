@@ -61,11 +61,14 @@ Messages:
 
   #➳➳➳➳➳ Xray Messages Messages➳➳➳➳➳
 
+  #Message that is sent if you don't select on or off and just type /xray
+  Xray-Toggle-Not-Selected: "&4Error: &cPlease use either on or off"
+
   #Message that is sent to the player when they enable /xray.
   Xray-Enabled: '&bXray: &2Enabled &7- &6de-Rendering blocks, This can cause a bit of client lag'
 
   #Message that is sent to the player when they disable /xray.
-  Xray-Disabled: '&b&lXray: &4Disabled &7- &ePlease change worlds for blocks to re-Render'
+  Xray-Disabled: '&b&lXray: &4Disabled &6re-Rendering blocks, This can cause a bit of client lag'
 
   #➳➳➳➳➳ Inventory Copy Messages➳➳➳➳➳
 

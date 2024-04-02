@@ -19,7 +19,6 @@ public class XrayCommand implements CommandExecutor {
         StaffUtils.getInstance().getCommand("Xray").setExecutor(this);
     }
 
-
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (!(sender instanceof Player)) {
             ConsoleMessages.sendMessage(sender, "Player-Only");
@@ -33,7 +32,7 @@ public class XrayCommand implements CommandExecutor {
         }
 
         if (args.length == 0) {
-            player.sendMessage("Not enough args");
+            ChatMessages.sendMessage(player, "Not-Enough-Args");
             return false;
         }
 
@@ -52,7 +51,7 @@ public class XrayCommand implements CommandExecutor {
                 XrayEffect.xrayEffectDisabled(player);
                 break;
             default:
-                player.sendMessage("Please select either on or off");
+                ChatMessages.sendMessage(player, "Xray-Toggle-Not-Selected");
                 break;
 
         }
