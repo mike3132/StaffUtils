@@ -67,6 +67,38 @@ Messages:
   #Message that is sent to the player when they disable /xray.
   Xray-Disabled: '&b&lXray: &4Disabled &7- &ePlease change worlds for blocks to re-Render'
 
+  #➳➳➳➳➳ Inventory Copy Messages➳➳➳➳➳
+
+  #Target player not found. (This will be sent if either the player is not online or is not a real player)
+  Copy-Inventory-To-Player-Target-Not-Found: '&cError player not found'
+
+  #Player-Inventory-Empty. (This will be sent if your inventory has nothing in it)
+  Copy-Inventory-Player-Empty: '&cError Your inventory is empty'
+
+  #Target Player Message. (This is the message that is sent to the target player when you give their inventory back)
+  Copy-Inventory-Target: '&5You have been given your inventory back back &4Resolute &cStaff'
+
+  #Player Message. (This is the message that is sent to staff when they give a player their inventory back [It auto fills the target players name])
+  Copy-Inventory-Player: '&2Copying your inventory to target player'
+
+  #Target Player Inventory Full Message. (This is the message that is sent to the target player if their inventory is full when you give their inventory back)
+  Copy-Inventory-Target-Inventory-Full: '&4Your inventory was full, The items have been dropped on the ground'
+
+  #Target Chest Inventory Not Found. (This will be sent if the block you are trying to copy to is not a chest)
+  Copy-Inventory-To-Chest-Target-Not-Found: '&cError this is not a chest'
+
+  #Target Chest Inventory To Far. (This will be sent if the chest is more than 4 blocks away from the player)
+  Copy-Inventory-To-Chest-To-Far: '&cError the chest is to far away'
+
+  #Target Chest Player Message . (This will be sent when you copy your inventory to a chest)
+  Copy-Inventory-To-Chest: '&2You have copied your inventory to a chest'
+
+  #Target Chest Inventory To Full. (This will be sent if the chest cannot hold the amount of items in your inventory)
+  Copy-Inventory-To-Chest-Chest-Full: '&cThis chest is too full for the amount of items you have'
+
+
+
+
 
 #See config.yml for permissions, and other plugin configurations
 #♏ If you have any questions please join my discord, open a support ticket and @Mike3132

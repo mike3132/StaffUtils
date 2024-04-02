@@ -3,14 +3,15 @@ package net.resolutemc.staffutils.CommandManager;
 import net.resolutemc.staffutils.EffectManager.XrayEffect;
 import net.resolutemc.staffutils.MessageManager.ChatMessages;
 import net.resolutemc.staffutils.MessageManager.ConsoleMessages;
-import net.resolutemc.staffutils.RunnableManager.XrayRunnable;
 import net.resolutemc.staffutils.SetManager.XraySet;
 import net.resolutemc.staffutils.StaffUtils;
-import org.bukkit.Chunk;
+import net.resolutemc.staffutils.UtilManager.XrayUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+
+import java.util.Locale;
 
 public class XrayCommand implements CommandExecutor {
 
@@ -31,16 +32,31 @@ public class XrayCommand implements CommandExecutor {
             return true;
         }
 
-        if (!XraySet.getXrayingPlayers().contains(player.getUniqueId())) {
-            XraySet.addXrayingPlayers(player.getUniqueId());
-            ChatMessages.sendMessage(player, "Xray-Enabled");
-            XrayRunnable.xrayRunnable(player);
-            XrayEffect.xrayEffectEnabled(player);
+        if (args.length == 0) {
+            player.sendMessage("Not enough args");
             return false;
         }
-        XraySet.removeXrayingPlayers(player.getUniqueId());
-        ChatMessages.sendMessage(player, "Xray-Disabled");
-        XrayEffect.xrayEffectDisabled(player);
+
+        XrayUtils xrayUtils = new XrayUtils();
+        switch (args[0].toUpperCase(Locale.ROOT)) {
+            case "ON":
+                XraySet.addXrayPlayers(player.getUniqueId());
+                xrayUtils.onXrayEnable(player);
+                XrayEffect.xrayEffectEnabled(player);
+                ChatMessages.sendMessage(player, "Xray-Enabled");
+                break;
+            case "OFF":
+                XraySet.removeXrayPlayers(player.getUniqueId());
+                xrayUtils.onXrayDisable(player);
+                ChatMessages.sendMessage(player, "Xray-Disabled");
+                XrayEffect.xrayEffectDisabled(player);
+                break;
+            default:
+                player.sendMessage("Please select either on or off");
+                break;
+
+        }
+
         return false;
     }
 }

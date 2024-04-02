@@ -5,17 +5,18 @@ import java.util.UUID;
 
 public class XraySet {
 
-    private final static HashSet<UUID> xrayingPlayers = new HashSet<>();
+    private final static HashSet<UUID> xrayPlayers = new HashSet<>();
 
-    public static HashSet<UUID> getXrayingPlayers() {
-        return xrayingPlayers;
+    public static HashSet<UUID> getXrayPlayers() {
+        return xrayPlayers;
     }
 
-    public static void addXrayingPlayers(UUID player) {
-        getXrayingPlayers().add(player);
+    public static void addXrayPlayers(UUID player) {
+        getXrayPlayers().add(player);
     }
 
-    public static void removeXrayingPlayers(UUID player) {
-        getXrayingPlayers().remove(player);
+    public static void removeXrayPlayers(UUID player) {
+        getXrayPlayers().remove(player);
     }
+
 }

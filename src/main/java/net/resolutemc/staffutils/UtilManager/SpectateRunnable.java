@@ -1,4 +1,4 @@
-package net.resolutemc.staffutils.RunnableManager;
+package net.resolutemc.staffutils.UtilManager;
 
 import net.resolutemc.staffutils.SetManager.SpectateSet;
 import net.resolutemc.staffutils.StaffUtils;

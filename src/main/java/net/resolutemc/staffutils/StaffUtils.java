@@ -5,6 +5,7 @@ import net.resolutemc.staffutils.ConfigManager.ConfigCreator;
 import net.resolutemc.staffutils.EventManager.BhopEvent;
 import net.resolutemc.staffutils.EventManager.FreezeEvent;
 import net.resolutemc.staffutils.MessageManager.ColorTranslate;
+import net.resolutemc.staffutils.UtilManager.XrayUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -22,6 +23,7 @@ public final class StaffUtils extends JavaPlugin {
         // Event registers
         Bukkit.getPluginManager().registerEvents(new FreezeEvent(), this);
         Bukkit.getPluginManager().registerEvents(new BhopEvent(), this);
+        Bukkit.getPluginManager().registerEvents(new XrayUtils(), this);
 
         // Config loader
         ConfigCreator.MESSAGES.create();
@@ -34,6 +36,7 @@ public final class StaffUtils extends JavaPlugin {
         registerSpectateCommand();
         registerXrayCommand();
         registerBhopCommand();
+        registerInventoryCommand();
     }
 
     @Override
@@ -62,6 +65,9 @@ public final class StaffUtils extends JavaPlugin {
     }
     private void registerBhopCommand() {
         new BhopCommand();
+    }
+    private void registerInventoryCommand() {
+        new CopyInventoryCommand();
     }
 
 }

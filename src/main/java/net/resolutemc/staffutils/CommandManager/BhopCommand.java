@@ -4,7 +4,6 @@ import net.resolutemc.staffutils.MessageManager.ChatMessages;
 import net.resolutemc.staffutils.MessageManager.ColorTranslate;
 import net.resolutemc.staffutils.MessageManager.ConsoleMessages;
 import net.resolutemc.staffutils.SetManager.BhopSet;
-import net.resolutemc.staffutils.SetManager.FreezeSet;
 import net.resolutemc.staffutils.StaffUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

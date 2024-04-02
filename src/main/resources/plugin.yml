@@ -1,7 +1,7 @@
 name: StaffUtils
 version: '${project.version}'
 main: net.resolutemc.staffutils.StaffUtils
-api-version: 1.19
+api-version: '1.20'
 commands:
   StaffUtils:
     description: Main plugin command
@@ -19,3 +19,6 @@ commands:
   Bhop:
     description: Enable or disable bhop mode
     permission: StaffUtils.Command.Bhop
+  CopyInv:
+    description: Copy your inventory to another player
+    permission: StaffUtils.Command.CopyInventory
